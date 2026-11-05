@@ -1,0 +1,22 @@
+{
+  "name": "whatsapp-claude-uam",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Asistente de WhatsApp (Kapso + Gemini) que consulta y actualiza las tareas de UAM Virtual en Google Calendar",
+  "type": "module",
+  "scripts": {
+    "local": "node src/server.js",
+    "token": "node scripts/get-google-token.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@google/genai": "^2.32.0",
+    "@kapso/whatsapp-cloud-api": "^0.4.0",
+    "@vercel/functions": "^3.10.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "googleapis": "^144.0.0"
+  }
+}
