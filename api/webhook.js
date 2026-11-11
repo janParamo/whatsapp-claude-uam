@@ -2,7 +2,8 @@
 import { waitUntil } from '@vercel/functions';
 import { processWebhook, missingEnv } from '../lib/assistant.js';
 
-export const config = { maxDuration: 120 };
+// Tiempo máximo de la función (también definido en vercel.json)
+export const maxDuration = 60;
 
 export async function GET() {
   const missing = missingEnv();
